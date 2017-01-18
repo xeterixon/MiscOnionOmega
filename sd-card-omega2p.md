@@ -3,7 +3,7 @@
 
 At the time of the writing of this, the "stock" Omega2+ firmware (v0.1.7) does not support the internal SD-card reader.
 
-Get a firmware that supports it from [http://repo.onion.io/omega2/images/]()
+Get a firmware that supports it from [http://repo.onion.io/omega2/images/](http://repo.onion.io/omega2/images/)
 Note that the Omega2+ firmwares are named something like "omega2p-".
 I used `omega2p-v0.1.8-b145.bin`
 
@@ -41,7 +41,7 @@ Mount the SD-card do /mnt
 `mount /dev/mmcblk0p1 /mnt/`
 
 To make the SD-card the "default" storage, look into this tutorial
-[https://wiki.onion.io/Tutorials/Using-USB-Storage-as-Rootfs]()
+[https://wiki.onion.io/Tutorials/Using-USB-Storage-as-Rootfs](https://wiki.onion.io/Tutorials/Using-USB-Storage-as-Rootfs)
 
 ##Issues
 * There seems to be some certs missing. `git clone` and probably every other stuff that goes over https complains about some missing certificate. Really don't know how that stuff works.
