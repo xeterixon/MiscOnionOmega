@@ -26,7 +26,11 @@ module.exports = (function()
 		}
 		Write(str)
 		{
-			return this._addCommand("write "+str);
+			return this._addCommand("write " + "\""+ str + "\"");
+		}
+		Invert(on)
+		{
+			return this._addCommand("invert " + ((on === "on")? "on" : "off"));
 		}
 		Clear()
 		{
@@ -38,7 +42,7 @@ module.exports = (function()
 		}
 		Cursor(x,y)
 		{
-			return this._addCommand("setCursor " + [x,y].join(","));
+			return this._addCommand("cursor " + [x,y].join(","));
 		}
 		Init()
 		{
