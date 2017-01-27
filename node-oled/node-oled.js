@@ -56,39 +56,3 @@ module.exports = (function()
 	}
 	return new OledExp();
 })();
-/*
-
-function Oled()
-{
-	class OledExp
-	{
-
-	}
-	var command = function(cmd,params)
-	{
-		var c = cmd;
-		if(params === undefined)
-		{
-			c + " " + params;
-		}
-		exec("oled-exp " +c);
-	}
-	this.Init = function()
-	{
-		command("-i");
-	}
-	this.SetCursor = function(x,y)
-	{
-		command("cursor",x+","+y);
-	}
-	this.Clear = function()
-	{
-		command("-c");
-	}
-	this.Write = function(str)
-	{
-
-	}
-}
-module.exports = Oled;
-*/
